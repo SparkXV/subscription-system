@@ -124,7 +124,7 @@ describe('SubscriptionsService', () => {
 
       expect(stripeService.createCustomer).toHaveBeenCalledWith(
         'qa@example.com',
-        'John',
+        'Test',
       );
       expect(usersService.updateStripeCustomerId).toHaveBeenCalledWith(
         'user-id',

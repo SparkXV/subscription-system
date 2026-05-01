@@ -153,7 +153,8 @@ npm run test:cov  # coverage
 
 ```
 src/
-├── auth/           # signup, login, JWT, guards, RBAC
+├── auth/           # signup, login, JWT strategy, guards, RBAC
+│   └── dto/        # signup + login validation
 ├── users/          # user schema + repository
 ├── plans/          # hardcoded plan definitions
 ├── subscriptions/  # checkout, subscription CRUD

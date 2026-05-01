@@ -3,7 +3,7 @@ import { Document, Types } from 'mongoose';
 
 export type SubscriptionDocument = Subscription & Document;
 
-@Schema({ timestamps: true })
+@Schema({ timestamps: true, versionKey: false })
 export class Subscription {
   @Prop({ type: Types.ObjectId, ref: 'User', required: true, index: true })
   userId: Types.ObjectId;

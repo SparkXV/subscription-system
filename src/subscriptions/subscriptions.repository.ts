@@ -4,7 +4,7 @@ import { Model } from 'mongoose';
 import {
   Subscription,
   SubscriptionDocument,
-} from './schemas/subscription.schema';
+} from './subscription.schema';
 
 @Injectable()
 export class SubscriptionsRepository {
